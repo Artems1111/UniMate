@@ -16,7 +16,7 @@ import system from './apps/system.json';
 import aiTools from './apps/ai-tools.json';
 
 
-export type DistroId = 'ubuntu' | 'debian' | 'arch' | 'fedora' | 'opensuse' | 'nix' | 'flatpak' | 'snap' | 'homebrew';
+export type DistroId = 'unios' | 'ubuntu' | 'debian' | 'arch' | 'fedora' | 'opensuse' | 'nix' | 'flatpak' | 'snap' | 'homebrew';
 export type UniversalTargetId = 'npm' | 'script';
 
 export type Category =
@@ -72,6 +72,7 @@ export const getIconUrl = (icon: IconDef): string => {
 
 
 export const distros: Distro[] = [
+    { id: 'unios', name: 'UniOS', iconUrl: './assets/unios-logo.png', color: '#1793D1', installPrefix: 'sudo pacman -S --needed --noconfirm' }, //TO FIX
     { id: 'ubuntu', name: 'Ubuntu', iconUrl: 'https://api.iconify.design/simple-icons/ubuntu.svg?color=%23E95420', color: '#E95420', installPrefix: 'sudo apt install -y' },
     { id: 'debian', name: 'Debian', iconUrl: 'https://api.iconify.design/simple-icons/debian.svg?color=%23A81D33', color: '#A81D33', installPrefix: 'sudo apt install -y' },
     { id: 'arch', name: 'Arch', iconUrl: 'https://api.iconify.design/simple-icons/archlinux.svg?color=%231793D1', color: '#1793D1', installPrefix: 'sudo pacman -S --needed --noconfirm' },
