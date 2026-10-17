@@ -1,3 +1,4 @@
+import uniosTools from './apps/unios-tools.json';
 import webBrowsers from './apps/web-browsers.json';
 import communication from './apps/communication.json';
 import devLanguages from './apps/dev-languages.json';
@@ -14,12 +15,14 @@ import security from './apps/security.json';
 import fileSharing from './apps/file-sharing.json';
 import system from './apps/system.json';
 import aiTools from './apps/ai-tools.json';
+import App from 'next/app';
 
 
 export type DistroId = 'unios' | 'ubuntu' | 'debian' | 'arch' | 'fedora' | 'opensuse' | 'nix' | 'flatpak' | 'snap' | 'homebrew';
 export type UniversalTargetId = 'npm' | 'script';
 
 export type Category =
+    | 'UniOS Tools'
     | 'Web Browsers'
     | 'Communication'
     | 'Dev: Languages'
@@ -85,6 +88,7 @@ export const distros: Distro[] = [
 ];
 
 export const apps: AppData[] = [
+    ...(uniosTools as AppData[]), 
     ...(webBrowsers as AppData[]),
     ...(communication as AppData[]),
     ...(devLanguages as AppData[]),
@@ -104,6 +108,7 @@ export const apps: AppData[] = [
 ];
 
 export const categories: Category[] = [
+    'UniOS Tools',
     'Web Browsers',
     'Communication',
     'Media',
