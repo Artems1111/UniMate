@@ -1,0 +1,41 @@
+[
+{
+  "id": "unibackpack",                      
+  "name": "UniBackpack",                  
+  "description": "A Qt6 downloader for software used by greek universities",  
+  "category": "UniOS Tools",
+  "targets": {
+    "arch": "unibackpack-bin"
+        },              
+  "icon": {                           
+    
+  },
+  "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+},
+{
+  "id": "unidesk",                      
+  "name": "UniDesc",                  
+  "description": "Helper app for UniOS written in python/Qt.",  
+  "category": "UniOS Tools",
+  "targets": {
+    "arch": "unideck-bin"
+        },              
+  "icon": {                           
+    
+  },
+  "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+},
+{
+  "id": "uninews",                      
+  "name": "UniNews",                  
+  "description": "News aggregator for universities",  
+  "category": "UniOS Tools",
+  "targets": {
+    "arch": "uninews-bin"
+        },              
+  "icon": {                           
+    
+  },
+  "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+}
+]
