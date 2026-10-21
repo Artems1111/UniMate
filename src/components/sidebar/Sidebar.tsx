@@ -51,7 +51,14 @@ export function Sidebar({
     const [copied, setCopied] = useState(false);
     const [distroOpen, setDistroOpen] = useState(false);
 
-    const showAur = selectedDistro === 'arch' && hasAurPackages;
+    //const showAur = selectedDistro === 'arch' && hasAurPackages;
+    let showAur = false;
+    if (selectedDistro === 'arch' && hasAurPackages){
+        showAur = true;
+    }
+    if(selectedDistro === 'unios' && hasAurPackages){
+        showAur = true;
+    }
     const currentDistro = distros.find(d => d.id === selectedDistro);
     const distroColor = currentDistro?.color || 'var(--accent)';
 
