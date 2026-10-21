@@ -22,6 +22,7 @@ const COLOR_MAP: Record<string, string> = {
     'teal': '#14b8a6',
     'gray': '#6b7280',
     'fuchsia': '#d946ef',
+    'violet': '#c48cb6'
 };
 
 interface AppItemProps {

@@ -2,40 +2,47 @@
 {
   "id": "unibackpack",                      
   "name": "UniBackpack",                  
-  "description": "A Qt6 downloader for software used by greek universities",  
+  "description": "Εργαλείο λήψης λογισμικού για ελληνικά πανεπιστήμια.",  
   "category": "UniOS Tools",
   "targets": {
+    "unios": "unibackpack-bin",
     "arch": "unibackpack-bin"
         },              
-  "icon": {                           
-    
+  "icon": {
+    "type": "url",                           
+    "url": "https://github.com/open-source-uom/UniBackpack/blob/main/resources/icons/unibackpack.png?raw=true"
   },
-  "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια. Μπορείτε όμως να αναζητήσετε το πακέτο στο [github.com/open-source-uom/unios-pkgs/tree/main/packages/x86_64](https://github.com/open-source-uom/unios-pkgs/tree/main/packages/x86_64)."
+
 },
 {
   "id": "unidesk",                      
-  "name": "UniDesc",                  
-  "description": "Helper app for UniOS written in python/Qt.",  
+  "name": "UniDesk",                  
+  "description": "Μια βοηθητική εφαρμογή για το UniOS γραμμένη σε python/qt",  
   "category": "UniOS Tools",
   "targets": {
-    "arch": "unideck-bin"
+    
+    
         },              
   "icon": {                           
-    
+    "type": "url",
+    "url": "https://github.com/open-source-uom/UniOS-landing-page/blob/main/assets/logo/icon1-05.png?raw=true"
   },
-  "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+  "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια. Μπορείτε όμως να αναζητήσετε το πακέτο στο [github.com/open-source-uom/unios-pkgs/tree/main/packages/x86_64](https://github.com/open-source-uom/unios-pkgs/tree/main/packages/x86_64)."
 },
 {
   "id": "uninews",                      
   "name": "UniNews",                  
-  "description": "News aggregator for universities",  
+  "description": "Εφαρμογή ροής ειδήσεων πανεπιστημίων.",  
   "category": "UniOS Tools",
   "targets": {
-    "arch": "uninews-bin"
-        },              
-  "icon": {                           
     
+        },              
+  "icon": {
+    "type": "url",                           
+    "url": "https://raw.githubusercontent.com/open-source-uom/UniNews/ef489d1d7b05f828f285e4ac5bbf972579f6f10d/packaging/uninews.svg"
   },
-  "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια. Μπορείτε όμως να αναζητήσετε το πακέτο στο [github.com/open-source-uom/unios-pkgs/tree/main/packages/x86_64](https://github.com/open-source-uom/unios-pkgs/tree/main/packages/x86_64)."
+
 }
 ]
